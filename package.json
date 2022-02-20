@@ -10,7 +10,11 @@
     "dev:server": "cd server && npm run dev",
     "prepare": "husky install",
     "pre-commit": "prettier --check **/*.{js,jsx}",
-    "prettier": "prettier --write **/*.{js,jsx,ts,tsx}"
+    "prettier": "prettier --write **/*.{js,jsx,ts,tsx}",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "cd server && npm run build",
+    "build:client": "cd client && npm run build",
+    "start": "cd server && npm start"
   },
   "keywords": [],
   "author": "",
