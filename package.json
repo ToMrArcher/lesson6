@@ -8,7 +8,9 @@
     "dev": "concurrently npm:dev:client npm:dev:server",
     "dev:client": "cd client && npm run dev",
     "dev:server": "cd server && npm run dev",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "pre-commit": "prettier --check **/*.{js,jsx}",
+    "prettier": "prettier --write **/*.{js,jsx,ts,tsx}"
   },
   "keywords": [],
   "author": "",
